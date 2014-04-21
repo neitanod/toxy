@@ -38,3 +38,7 @@ This is already useful to test your local sites on Apache virtual hosts from
 other machines (and devices) in your network without having to add entries on 
 /etc/hosts/ on every device.  Also, you will see the request pass through your
 console.  :)
+
+For instance, open http://192.168.1.4:8080 (assuming your development machine is
+at that IP address) from another machine on the local network, and you'll see 
+your virtual host.
