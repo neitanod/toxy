@@ -11,12 +11,19 @@ import (
 )
 
 var target *string
+var port *string
 
 func main() {
   target = flag.String("target", "", "target URL for reverse proxy.  Leave empty for traditional proxy.")
+  port = flag.String("port", "8080", "port to listen to.")
   flag.Parse()
   http.HandleFunc("/", report)
-  log.Fatal(http.ListenAndServe("127.0.0.1:8080", nil))
+  if *target == "" {
+    log.Println("Starting traditional proxy.")
+  } else {
+    log.Println("Starting reverse proxy for " + *target)
+  }
+  log.Fatal(http.ListenAndServe(":" + *port, nil))
 }
 
 func report(w http.ResponseWriter, r *http.Request){
