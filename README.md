@@ -42,3 +42,17 @@ console.  :)
 For instance, open http://192.168.1.4:8080 (assuming your development machine is
 at that IP address) from another machine on the local network, and you'll see 
 your virtual host.
+
+Installation:
+-------------
+
+Install Go from http://golang.org.
+
+Clone and compile Toxy with:
+
+    $ git clone https://github.com/neitanod/toxy.git
+    Cloning into 'toxy'...
+    $ cd toxy
+    $ go build
+
+And you should get the `toxy` executable.
