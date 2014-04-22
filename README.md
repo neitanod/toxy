@@ -12,8 +12,9 @@ Usage:
     $ ./toxy -h                                                 ⏎
     Usage of ./toxy:
       --open-gzip=false, -g
-                    Internally uncompress and recompress gzipped contents. Set to True if
-                    you want to see or modify the body of responses.  False for a faster proxy.
+                    Internally uncompress and recompress gzipped contents. Set to True if you
+                    want to see or modify the body of responses (by hacking Toxy's source code).
+                    Leave as False for a faster proxy.
       --port="8080", -p
                     Port to listen to.
       --show-request=true, -r
