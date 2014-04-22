@@ -43,6 +43,40 @@ For instance, open http://192.168.1.4:8080 (assuming your development machine is
 at that IP address) from another machine on the local network, and you'll see 
 your virtual host.
 
+### Commandline help:
+
+    $ ./toxy -h                                                 ⏎
+    Usage of ./toxy:
+      --open-gzip=false, -g
+                    Internally uncompress and recompress gzipped contents. Set to True if
+                    you want to see or modify the body of responses.  False for a faster proxy.
+      --port="8080", -p
+                    Port to listen to.
+      --show-request=true, -r
+                    Print every request URI.
+      --show-request-body=false, -d
+                    Print every request body (ie, POST data).
+      --show-request-headers=false, -reqh
+                    Print request headers.
+      --show-response=false, -res
+                    Print every unmodified response body.
+      --show-response-headers=false, -resh
+                    Print all unmodified response heders.
+      --show-rewritten-request=false, -r2
+                    Print every rewritten (modified by this proxy) request URI.
+      --show-rewritten-request-body=false, -d2
+                    Print every rewritten request body.
+      --show-rewritten-request-headers=false, -reqh2
+                    Print rewritten request headers.
+      --show-rewritten-response=false, -res2
+                    Print every rewritten response body.
+      --show-rewritten-response-headers=false, -resh2
+                    Print all rewritten response headers.
+      --target="", -t
+                    Target URL for single-host everse proxy.  Leave empty for traditional proxy.
+      --use-cache=false, -c
+                    Cache all GET requests.
+
 Installation:
 -------------
 
