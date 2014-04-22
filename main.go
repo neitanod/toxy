@@ -59,7 +59,7 @@ func init() {
   flag.BoolVar(&showResponseHeaders, "resh", false, "")
   flag.BoolVar(&showFinalResponseHeaders, "show-rewritten-response-headers", false, ", -resh2\n\t\tPrint all rewritten response headers.")
   flag.BoolVar(&showFinalResponseHeaders, "resh2", false, "")
-  flag.BoolVar(&unzip, "open-gzip", false, ", -g\n\t\tInternally uncompress and recompress gzipped contents. Set to True if \n\t\tyou want to see or modify the body of responses.  False for a faster proxy.")
+  flag.BoolVar(&unzip, "open-gzip", false, ", -g\n\t\tInternally uncompress and recompress gzipped contents. Set to True if \n\t\tyou want to see or modify the body of responses (by hacking Toxy's source code).\n\t\tLeave as False for a faster proxy.")
   flag.BoolVar(&unzip, "g", false, "")
   flag.BoolVar(&useCache, "use-cache", false, ", -c\n\t\tCache all GET requests.")
   flag.BoolVar(&useCache, "c", false, "")
