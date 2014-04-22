@@ -9,7 +9,7 @@ Usage:
 
 ### Help:
 
-    $ ./toxy -h                                                 ⏎
+    $ ./toxy -h
     Usage of ./toxy:
       --open-gzip=false, -g
                     Internally uncompress and recompress gzipped contents. Set to True if you
