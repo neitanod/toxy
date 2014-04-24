@@ -43,7 +43,7 @@ func init() {
   flag.BoolVar(&showUri, "r", true, "")
   flag.BoolVar(&showTargetUri, "show-rewritten-request", false, ", -r2\n\t\tPrint every rewritten (modified by this proxy) request URI.")
   flag.BoolVar(&showTargetUri, "r2", false, "")
-  flag.BoolVar(&showRequestBody, "show-request-body", false, ", -d\n\t\tPrint every request body (ie, POST data).")
+  flag.BoolVar(&showRequestBody, "show-request-body", true, ", -d\n\t\tPrint every request body (ie, POST data).")
   flag.BoolVar(&showRequestBody, "d", false, "")
   flag.BoolVar(&showTargetRequestBody, "show-rewritten-request-body", false, ", -d2\n\t\tPrint every rewritten request body.")
   flag.BoolVar(&showTargetRequestBody, "d2", false, "")
